@@ -43,7 +43,7 @@ const account = {
   getTransactionDetails(id) {
     console.log(this.transactions);
     let message = `Транзакция с указанным ID = ${id} не найдена!`;
-    for (obj of this.transactions) {
+    for (const obj of this.transactions) {
       const keys = Object.keys(obj);
       for (const key of keys) {
         if (obj[key] === id) {
@@ -54,7 +54,8 @@ const account = {
     return console.log(message);
   },
   getTransactionTotal(type) {
-    for (obj of this.transactions) {
+    let message = '';
+    for (const obj of this.transactions) {
       const keys = Object.keys(obj);
       for (const key of keys) {
         if (obj[key] === type) {

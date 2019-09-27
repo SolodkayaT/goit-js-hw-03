@@ -27,10 +27,3 @@ const products = [
 console.log(calculateTotalPrice(products, 'Радар')); // 5200
 
 console.log(calculateTotalPrice(products, 'Дроид')); // 2800
-
-
-for (const key of keys) {
-  while (obj[key] === type)do {
-  message =  `Ваша транзакция найдена с типом = ${type}: ID = ${obj.id} , Сумма = ${obj.amount} .`;
-  }
-}
